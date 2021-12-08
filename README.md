@@ -155,7 +155,7 @@ const deleteTask = async (id) => {
 | --- | --- |
 | git add . | add our work  |
 | git commit | add comment before upload it staged 
-| git push | Upload it to your github  |
+| git push | Upload it to your github Repo  |
 
 
 
