@@ -28,13 +28,13 @@ const state = useSelector((state)=>{
 const dispatch = useDispatch();
 
 console.log(state);
-  useEffect(() => {
+//   useEffect(() => {
      
-const token = localStorage.getItem("token");
+// // const token = localStorage.getItem("token");
 
-setLocal(token)
+// // setLocal(token)
 
-  }, [])
+//   }, [])
 
   const logInB = async()=>{
     const result = await axios.post(`${BASE_URL}/login`,{
@@ -59,7 +59,7 @@ setLocal(token)
 
   return (
     <div>
-        {!local ? (
+        {!state.token ? (
             <div className="mainDiv">
       <h1>Login</h1>
       <input
