@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import "./style.css";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../reducers/signin";
+import { logout } from "../../reducers/signin";
 import Taskss, { createTask, readTask } from "../../reducers/task";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
@@ -37,7 +37,7 @@ export const Tasks = () => {
         Authorization: `Bearer ${local}`,
       },
     });
-    dispatch(readTask({ task: result.data }));
+    // dispatch(readTask({ task: result.data }));
     setTasks(result.data);
   };
 
@@ -53,7 +53,7 @@ export const Tasks = () => {
         },
       }
     );
-    dispatch(createTask({ task }));
+    // dispatch(createTask({ task }));
     getTask(local);
   };
 
