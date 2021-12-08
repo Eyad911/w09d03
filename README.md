@@ -149,6 +149,14 @@ const deleteTask = async (id) => {
     getTask(local);
   };
 ```
+# Upload our Work on github:
+
+| Command | Description |
+| --- | --- |
+| git add . | add our work  |
+| git commit | add comment before upload it staged 
+| git push | Upload it to your github  |
+
 
 
 

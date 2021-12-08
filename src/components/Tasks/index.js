@@ -22,13 +22,15 @@ export const Tasks = () => {
     };
   });
   console.log(state);
-  useEffect(() => {
-    getTask();
-  }, []);
+  
   useEffect(() => {
     const getToken = localStorage.getItem("token");
     setLocal(getToken);
-    getTask();
+    getTask(local);
+  }, []);
+
+  useEffect(() => {
+    getTask(local);
   }, []);
 
   const getTask = async () => {
