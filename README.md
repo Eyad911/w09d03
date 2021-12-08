@@ -158,7 +158,9 @@ const deleteTask = async (id) => {
 | git push | Upload it to your github Repo  |
 
 
+# UML Diagram:
 
+![This is an image](./UML.png)
 
 
 # Links:
